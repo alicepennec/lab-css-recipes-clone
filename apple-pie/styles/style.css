@@ -22,3 +22,66 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+header {
+  background-image: url(" ../images/apple-pie.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;    
+}
+
+header h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  top: 50%;
+}
+
+div {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section p {
+  margin: 30px;
+}
+
+img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-top: 2px solid gray;
+}
+
+.section-titles {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.my-unordered-list {
+  list-style-type: '- ';
+  margin-left: 20px;
+}
+
+ol {
+  counter-reset: list;
+  margin-left: 20px;
+}
+
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
